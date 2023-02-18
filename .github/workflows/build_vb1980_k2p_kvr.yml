@@ -217,8 +217,7 @@ jobs:
         done
         cd $FIRMWARE_PATH
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
-        #echo "::set-output name=status::success"
-        echo "$name success" >> $GITHUB_ENV
+        echo "::set-output name=status::success"
     - name : Upload packages
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success'
