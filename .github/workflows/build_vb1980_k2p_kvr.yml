@@ -122,7 +122,7 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MICROSOCKS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_MSD_LITE/d' .config
         #校园网相关开始
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config #删除配置项MENTOHUST
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT/d' .config #删除配置项SCUTCLIENT
